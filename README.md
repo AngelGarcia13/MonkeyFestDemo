@@ -8,9 +8,13 @@ App Center Workshop
 4. Search for the TrackEvent TODO's
   
 //When app fetchs data
+
+
   Analytics.TrackEvent("List of series fetched from internet");
  
 //When click on a detail 
+
+
   var analyticsData = new Dictionary<string, string>
             {
                 { "Name", Serie.Name }
@@ -20,6 +24,8 @@ App Center Workshop
 
 5. Search for the Crash TODO's:
 //When click on a detail 
+
+
  if (Serie.Name.Contains("Game of"))
             {
                 Crashes.TrackError(new Exception("The winter is here!"));
