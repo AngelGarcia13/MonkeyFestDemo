@@ -8,6 +8,7 @@ using MonkeyFestDemo.Services;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Push;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace MonkeyFestDemo
@@ -44,7 +45,7 @@ namespace MonkeyFestDemo
             AppCenter.Start("android=26b0e194-5a11-4c87-aa07-eebb79bebed4;" +
                   "uwp={Your UWP App secret here};" +
                   "ios={Your iOS App secret here}",
-                  typeof(Analytics), typeof(Crashes));
+                  typeof(Analytics), typeof(Crashes), typeof(Push));
         }
     }
 }
